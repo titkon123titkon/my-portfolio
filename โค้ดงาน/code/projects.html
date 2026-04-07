@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Clone - VS Code Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #3c4043;
+            line-height: 1.6;
+        }
+
+        /* แถบเมนูด้านบน */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .site-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* ส่วนหัวตัวโตๆ (Hero Section) เหมือนใน Google Sites */
+        .hero {
+            background-color: #4a4a4a; /* คุณสามารถเปลี่ยนเป็นรูปภาพได้ */
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* การจัดวางเนื้อหา */
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        /* ตัวอย่างการแบ่ง Column (เช่น ใส่รูปข้าง ข้อความข้าง) */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+        }
+
+        .img-placeholder {
+            background: #f1f3f4;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            color: #70757a;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">
+            <img src="logo.jpg" alt="Logo" style="height: 40px; vertical-align: middle; cursor: pointer;">
+        </a>
+
+        <div>
+            <a href="home.html" style="margin-left: 20px; text-decoration: none; color: black;">หน้าแรก</a>
+            <a href="projects.html" style="margin-left: 20px; text-decoration: none; color: black;">Projects</a>
+            <a href="skill.html" style="margin-left: 20px; text-decoration: none; color: black;">Skill</a>
+            <a href="abolme.html" style="margin-left: 20px; text-decoration: none; color: black;">เกี่ยวกับ</a>
+        </div>
+    </nav>
+    </nav>
+    <div class="container">
+        <h1 class="page-title">Projects</h1>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h2>เรื่องไล่นกอัตโนมัติ</h2>
+                <p>ระบบตรวจจับและขับไล่นกแบบอัตโนมัติ เพื่อช่วยลดความเสียหายในพื้นที่เกษตรกรรมหรืออาคารสถานที่</p>
+                <a href="#" class="btn-more">อ่านเพิ่มเติม</a>
+            </div>
+            <div class="project-img">
+                <img src="f/img/job1.jpg" alt="ไล่นกอัตโนมัติ"style="width: 40%; height: auto; display: block; margin: 0 auto;">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h2>กล่องรับพัสดุเเละสั่งใช้งานด้วยเเอป Blynk</h2>
+                <p>นวัตกรรมกล่องรับพัสดุอัจฉริยะที่สามารถควบคุมการล็อค-ปลดล็อค และรับการแจ้งเตือนผ่านสมาร์ทโฟนด้วยแอปพลิเคชัน Blynk</p>
+                <a href="#" class="btn-more">อ่านเพิ่มเติม</a>
+            </div>
+            <div class="project-img">
+                <img src="f/img/job2.png" alt="กล่องรับพัสดุ Blynk"style="width: 40%; height: auto; display: block; margin: 0 auto;">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h2>ออกเเบบเเผนที่เเละคาเเรคเตอร์</h2>
+                <p>ผลงานการออกแบบเชิงสร้างสรรค์สำหรับเกม Dungeons & Dragons (D&D) ทั้งในส่วนของแผนที่โลกและตัวละคร</p>
+                <a href="#" class="btn-more">อ่านเพิ่มเติม</a>
+            </div>
+            <div class="project-img">
+                <img src="f/img/job3.jpg" alt="D&D Project"style="width: 30%; height: auto; display: block; margin: 0 auto;">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
